@@ -1,0 +1,13 @@
+{
+  "name": "underlimit",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Make PDFs and photos fit upload requirements, locally in your browser.",
+  "engines": { "node": ">=20.19.0" },
+  "scripts": {
+    "build": "node scripts/vendor.mjs",
+    "start": "node scripts/serve.mjs",
+    "check": "node --check dist/app.js && node --check scripts/vendor.mjs && node --check scripts/serve.mjs"
+  },
+  "dependencies": { "pdf-lib": "1.17.1", "pdfjs-dist": "5.6.205" }
+}
